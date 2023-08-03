@@ -126,14 +126,14 @@
   top: 0px;
   left: 50%;
   opacity: 0;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #fff;
   border: 2px solid #efefefe5;
   backdrop-filter: blur(16px);
   color: #000;
-  transform: translate(-50%, -120%);
+  transform: translate(-50%, -140%);
   pointer-events: none;
-  border-radius: calc(2rem + 1em);
+  border-radius: calc(1rem + 1em);
   box-shadow: 0.5em 0.6em 0.7em rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease;
   z-index: 6;
@@ -141,7 +141,7 @@
 @media (hover: hover) {
   .skillItem:hover > .skillItemDesc {
     opacity: 1;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -120%);
   }
   .skillItem:hover {
     transform: scale(1.1);
