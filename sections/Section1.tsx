@@ -143,7 +143,11 @@ function Contacts() {
       <ul className={sec.contacts} onClick={(e) => e.stopPropagation()}>
         <ContactItem name="Email" data="oein@poi.kr" to="mailto:oein@poi.kr" />
         <ContactItem name="Github" data="Oein" to="https://github.com/Oein" />
-        <ContactItem name="Discord" data="oein0219" />
+        <ContactItem
+          name="Discord"
+          data="oein0219"
+          to="https://discordapp.com/users/562199383274291214"
+        />
         <ContactItem
           name="Instagram"
           data="oein0219"
