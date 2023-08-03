@@ -1,0 +1,20 @@
+.container {
+  width: 100dvw;
+  min-height: 100dvh;
+  height: max-content;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.profileImage {
+  width: 14rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.box {
+  margin: 1.5rem;
+  background-color: white;
+}
