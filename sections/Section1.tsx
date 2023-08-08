@@ -14,7 +14,7 @@ function ProfileItem(props: { name: string; data: string }) {
 function MyProfile() {
   return (
     <div
-      className={styles.box}
+      className={styles.box + " " + sec.profile}
       style={{
         overflowY: "auto",
         minWidth: "max-content",
@@ -29,18 +29,18 @@ function MyProfile() {
       <h1 className={sec.realName}>성현</h1>
       <h3 className={sec.nickName}>Oein</h3>
       <div className={sec.profileItems}>
-        <ProfileItem name="생년월일" data="20nm년 2월 19일" />
+        <ProfileItem name="생년월일" data="2010년 2월 19일" />
         <ProfileItem name="연락처" data="010-nmkl-nmkl" />
         <ProfileItem name="이메일" data="oein@poi.kr" />
-        <ProfileItem name="주소" data="대한민국 xxxx" />
+        <ProfileItem name="주소" data="대전광역시" />
       </div>
     </div>
   );
 }
 
-function SectionTitle(props: { children: string }) {
+function SectionTitle(props: { children: string; fst?: boolean }) {
   return (
-    <div className={sec.titleContainer}>
+    <div className={sec.titleContainer + " " + (props.fst ? sec.las : "")}>
       <div className={sec.title}>{props.children}</div>
       <div className={sec.titleborder}></div>
     </div>
@@ -95,7 +95,7 @@ function Skills() {
         overflow: "visible",
       }}
     >
-      <SectionTitle>Language and skills</SectionTitle>
+      <SectionTitle fst>Language and skills</SectionTitle>
       <div
         style={{
           overflow: "visible",
