@@ -50,7 +50,17 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
+.profile {
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 756px) {
+  .profile {
+    margin: 1.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 630px) {
   .container {
     display: block;
   }
@@ -183,4 +193,8 @@
 .contactLink {
   text-decoration: none !important;
   color: black;
+}
+
+.las {
+  margin-top: 0px;
 }
